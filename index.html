@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Basic Test Site</title>
+    <!-- Tailwind CSS CDN for easy styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter for a clean look -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            /* Ensure the body takes full viewport height and enables flex for footer sticking */
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        main {
+            flex-grow: 1; /* Allows main content to take up available space, pushing footer down */
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+    <!-- Header Section -->
+    <header class="bg-blue-600 text-white p-4 shadow-md rounded-b-lg">
+        <div class="container mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-8">
+            <h1 class="text-2xl font-bold">My Test Site</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#" class="hover:text-blue-200 transition duration-300">Home</a></li>
+                    <li><a href="#" class="hover:text-blue-200 transition duration-300">About</a></li>
+                    <li><a href="#" class="hover:text-blue-200 transition duration-300">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="container mx-auto p-6 my-8 bg-white shadow-lg rounded-lg px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-semibold text-gray-800 mb-6">Welcome to Your Test Site!</h2>
+        <p class="text-lg leading-relaxed mb-4">
+            This is a basic HTML structure designed to demonstrate a header, main content area, and a footer.
+            It uses Tailwind CSS for modern styling, ensuring a responsive and visually appealing layout across
+            different devices.
+        </p>
+        <p class="text-lg leading-relaxed mb-4">
+            You can easily modify this content, add more sections, or integrate dynamic elements as needed.
+            The `main` section is set to grow, pushing the footer to the bottom of the page, even if the content
+            is short.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+            <div class="bg-gray-50 p-6 rounded-md shadow-sm border border-gray-200">
+                <h3 class="text-xl font-semibold text-gray-700 mb-3">Section One</h3>
+                <p class="text-gray-600">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+            <div class="bg-gray-50 p-6 rounded-md shadow-sm border border-gray-200">
+                <h3 class="text-xl font-semibold text-gray-700 mb-3">Section Two</h3>
+                <p class="text-gray-600">
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white p-4 mt-8 shadow-inner rounded-t-lg">
+        <div class="container mx-auto text-center text-sm px-4 sm:px-6 lg:px-8">
+            <p>&copy; 2025 My Test Site. All rights reserved.</p>
+            <p class="mt-1">Designed with Tailwind CSS</p>
+        </div>
+    </footer>
+
+</body>
+</html>
